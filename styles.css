@@ -792,6 +792,8 @@ img.header__image-bg {
   padding: 3rem 1rem;
   background-color: #fff;
   margin: 50px 50px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 #clothing .section-header {
@@ -803,7 +805,7 @@ img.header__image-bg {
 
 #clothing .section-header h2 {
   font-size: 2.5rem;
-  font-family: var(--heading-font, "Chilanka", cursive);
+  /* font-family: var(--heading-font, "Chilanka", cursive); */
   font-weight: normal;
 }
 
@@ -937,6 +939,8 @@ img.header__image-bg {
   padding: 3rem 1rem;
   background-color: #fff; /* Background color for the Foodies section */
   margin: 50px 50px; /* Align with the layout of the Clothes section */
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 #foodies .section-header {
@@ -948,7 +952,7 @@ img.header__image-bg {
 
 #foodies .section-header h2 {
   font-size: 2.5rem;
-  font-family: var(--heading-font, "Chilanka", cursive);
+  /* font-family: var(--heading-font, "Chilanka", cursive); */
   font-weight: normal;
 }
 
