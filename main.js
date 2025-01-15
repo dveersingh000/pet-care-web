@@ -89,3 +89,60 @@ ScrollReveal().reveal(".instagram__grid img", {
   duration: 1000,
   interval: 500,
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const filterButtons = document.querySelectorAll(".filter-button");
+  const items = document.querySelectorAll(".isotope-container .item");
+
+  filterButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      // Remove active class from all buttons
+      filterButtons.forEach((btn) => btn.classList.remove("active"));
+
+      // Add active class to the clicked button
+      button.classList.add("active");
+
+      // Get the filter value
+      const filter = button.getAttribute("data-filter");
+
+      // Show/Hide items based on the filter
+      items.forEach((item) => {
+        if (filter === "*" || item.classList.contains(filter.substring(1))) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    });
+  });
+});
+document.addEventListener("scroll", () => {
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll(".nav__links a");
+
+  let currentSection = "";
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.clientHeight;
+
+    if (window.scrollY >= sectionTop - 50) {
+      currentSection = section.getAttribute("id");
+    }
+  });
+
+  navLinks.forEach((link) => {
+    link.classList.remove("active");
+    if (link.getAttribute("href").substring(1) === currentSection) {
+      link.classList.add("active");
+    }
+  });
+});
+document.querySelectorAll(".nav__links a").forEach((link) => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+    const targetId = link.getAttribute("href").substring(1);
+    document.getElementById(targetId).scrollIntoView({ behavior: "smooth" });
+  });
+});
+

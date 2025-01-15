@@ -732,3 +732,407 @@ img.header__image-bg {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
+#categories {
+  padding: 3rem 1rem;
+  background-color: #fff; /* You can change this if you want */
+  margin-left: 140px;
+}
+
+#categories .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#categories .categories-item {
+  text-decoration: none;
+  color: var(--dark-color, #222); /* Use your CSS variables or default */
+  display: inline-block;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+#categories .category-icon {
+  font-size: 3rem;
+  color: #dead6f; /* Accent color for the icons */
+  transition: transform 0.3s ease-in-out;
+}
+
+#categories .categories-item h5 {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-family: var(--heading-font, 'Chilanka', cursive); /* Use your font variable */
+  font-weight: 500;
+}
+
+#categories .categories-item:hover .category-icon {
+  transform: scale(1.2);
+  color: #ffc107; /* Hover effect for icons */
+}
+
+#categories .categories-item:hover h5 {
+  color: #ffc107; /* Hover effect for text */
+}
+
+#categories .row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+#categories .col {
+  flex: 1 1 18%;
+  max-width: 18%; /* Adjust column width */
+  min-width: 120px;
+}
+
+#clothing {
+  padding: 3rem 1rem;
+  background-color: #fff;
+  margin: 50px 50px;
+}
+
+#clothing .section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+#clothing .section-header h2 {
+  font-size: 2.5rem;
+  font-family: var(--heading-font, "Chilanka", cursive);
+  font-weight: normal;
+}
+
+#clothing .section-header .btn {
+  border: 1px solid #222;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: #222;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+#clothing .section-header .btn:hover {
+  background-color: #dead6f;
+  color: #fff;
+}
+
+#clothing .products-carousel {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+}
+
+#clothing .swiper-slide {
+  flex: 0 0 auto;
+  max-width: 220px;
+}
+
+#clothing .card {
+  border: 1px solid #f0f0f0;
+  border-radius: 8px;
+  background-color: #fff;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+#clothing .card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+
+#clothing .card img {
+  width: 100%;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+#clothing .card-body {
+  padding: 1rem;
+  text-align: center;
+}
+
+#clothing .card-body h3 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  color: #222;
+}
+
+#clothing .card-body .rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  font-size: 0.9rem;
+}
+
+#clothing .card-body .rating iconify-icon {
+  color: #dead6f;
+}
+
+#clothing .card-body .rating span {
+  font-weight: bold;
+  color: #666;
+}
+
+#clothing .card-body h3.text-primary {
+  font-size: 1.5rem;
+  color: #dead6f;
+  margin: 0.5rem 0;
+}
+
+#clothing .btn-cart {
+  background-color: #dead6f;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#clothing .btn-cart:hover {
+  background-color: #ffc107;
+}
+
+#clothing .btn-wishlist {
+  background-color: transparent;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#clothing .btn-wishlist:hover {
+  background-color: #dead6f;
+  color: #fff;
+}
+
+#clothing .position-absolute {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background-color: #fff;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #222;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+#foodies {
+  padding: 3rem 1rem;
+  background-color: #fff; /* Background color for the Foodies section */
+  margin: 50px 50px; /* Align with the layout of the Clothes section */
+}
+
+#foodies .section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+#foodies .section-header h2 {
+  font-size: 2.5rem;
+  font-family: var(--heading-font, "Chilanka", cursive);
+  font-weight: normal;
+}
+
+#foodies .section-header .btn {
+  border: 1px solid #222;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: #222;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+#foodies .section-header .btn:hover {
+  background-color: #dead6f;
+  color: #fff;
+}
+
+#foodies .isotope-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem; /* Space between items */
+  justify-content: center; /* Center-align items */
+  margin: 50px 50px;
+}
+
+#foodies .item {
+  display: flex;
+  gap: 3rem;
+}
+
+#foodies .item:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+
+#foodies .item img {
+  width: 100%;
+  border-bottom: 1px solid #f0f0f0;
+  border-radius: 8px 8px 0 0;
+}
+
+#foodies .item .card-body {
+  padding: 1rem;
+  text-align: center;
+}
+
+#foodies .item .card-body h3 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  color: #222;
+}
+
+#foodies .item .card-body h3.text-primary {
+  font-size: 1.5rem;
+  color: #dead6f;
+  margin: 0.5rem 0;
+}
+
+#foodies .item .card-body .rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  font-size: 0.9rem;
+}
+
+#foodies .item .card-body .rating iconify-icon {
+  color: #dead6f;
+}
+
+#foodies .item .card-body .rating span {
+  font-weight: bold;
+  color: #666;
+}
+
+#foodies .btn-cart {
+  background-color: #dead6f;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+/* Style for filter buttons */
+.filter-button {
+  background-color: #f8f9fa;
+  color: #333;
+  border: 2px solid #dead6f;
+  border-radius: 20px;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin: 0.5rem 0.25rem;
+}
+
+/* Hover effect for filter buttons */
+.filter-button:hover {
+  background-color: #dead6f;
+  color: #fff;
+  transform: translateY(-3px); /* Lift effect */
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+/* Active button styling */
+.filter-button.active {
+  background-color: #dead6f;
+  color: #fff;
+  border-color: #dead6f;
+  transform: translateY(-3px);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive alignment */
+@media (max-width: 768px) {
+  .filter-button {
+    font-size: 0.9rem; /* Smaller font for small screens */
+    padding: 0.4rem 1rem; /* Adjust padding */
+  }
+
+  .mb-md-0 {
+    text-align: center !important;
+  }
+}
+
+#foodies .btn-cart:hover {
+  background-color: #ffc107;
+}
+
+#foodies .btn-wishlist {
+  background-color: transparent;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#foodies .btn-wishlist:hover {
+  background-color: #dead6f;
+  color: #fff;
+}
+
+#foodies .position-absolute {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background-color: #fff;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #222;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  #foodies .isotope-container {
+    gap: 1rem; /* Adjust spacing */
+  }
+
+  #foodies .item {
+    flex: 1 1 calc(50% - 1rem); /* Two items per row */
+  }
+}
+
+@media (max-width: 576px) {
+  #foodies .item {
+    flex: 1 1 100%; /* Single item per row */
+  }
+}
+.nav__links a.active {
+  color: #dead6f;
+  font-weight: bold;
+}
