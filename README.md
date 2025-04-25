@@ -16,3 +16,10 @@ Pet Care Hub is a fully responsive pet store website built from scratch using HT
 - Testimonials: A section featuring testimonials from satisfied customers, enhancing credibility and trust.
 
 - Instagram Feed: A visual display of the latest posts from the Pet Care Hub's Instagram account, encouraging social media engagement.
+
+## Technologies Used
+- HTML: For structuring the content of the website.
+- CSS: For styling and layout, ensuring a visually appealing design.
+- JavaScript: For interactive elements and functionality, enhancing user experience.
+- Swiper.js: For creating responsive carousels for product displays.
+- Remix Icon: For using a variety of icons throughout the website.
